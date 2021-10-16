@@ -66,6 +66,7 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "hint": "6.0.x",
+    "react-test-renderer": "^17.0.2",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^1.9.0",

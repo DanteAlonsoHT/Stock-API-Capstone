@@ -4,6 +4,8 @@
   justify-content: space-between;
   padding: 1rem;
   background-color: var(--color-pink-medium-one);
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .navIcon:hover {

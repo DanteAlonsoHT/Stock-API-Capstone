@@ -1,3 +1,8 @@
+.fullDescriptionContent {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
 .exchangeContent {
   padding: 2rem;
   text-align: center;

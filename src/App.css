@@ -9,3 +9,8 @@ h1 {
 .bgDark {
   background-color: #ec3e7c;
 }
+
+button:hover,
+select:hover {
+  cursor: pointer;
+}

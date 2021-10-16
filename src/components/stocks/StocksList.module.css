@@ -1,0 +1,40 @@
+@import url(../requirements.css);
+
+body {
+  background-color: var(--color-pink-medium-two);
+  color: var(--color-light);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.stocksListContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin: 1rem auto;
+}
+
+.stockFiltersContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  margin: 1rem auto 0 auto;
+}
+
+.stockFiltersContent button,
+.stockFiltersContent select {
+  border: none;
+  background-color: var(--color-light);
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.stockFiltersContent button:hover {
+  opacity: 60%;
+}

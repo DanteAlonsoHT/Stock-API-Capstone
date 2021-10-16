@@ -3,19 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.23.0",
+    "bootstrap": "5.1.1",
+    "boxicons": "^2.0.9",
+    "d3-dsv": "^3.0.1",
+    "d3-format": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "d3-time-format": "^4.0.0",
+    "jest-fetch-mock": "^3.0.3",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-stockcharts": "^0.7.8",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "eslint .",
+    "stylelint": "stylelint \"**/*.{css,scss}\""
   },
   "eslintConfig": {
     "extends": [
@@ -33,6 +53,29 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.x",
+    "@babel/eslint-parser": "7.x",
+    "@babel/plugin-syntax-jsx": "7.x",
+    "@babel/preset-react": "7.x",
+    "eslint": "7.x",
+    "eslint-config-airbnb": "18.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "4.x",
+    "hint": "6.0.x",
+    "react-test-renderer": "^17.0.2",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(d3-dsv|d3-format|d3-time-format|d3-time|d3-array|internmap)/)"
     ]
   }
 }

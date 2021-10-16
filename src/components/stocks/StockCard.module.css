@@ -1,0 +1,84 @@
+@import url(../requirements.css);
+
+.sectionTitle {
+  position: absolute;
+  bottom: -3.85rem;
+  left: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+}
+
+.stockSymbol {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 0.25rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--color-pink-hard);
+  margin: 0;
+}
+
+.stockName {
+  display: block;
+  position: absolute;
+  bottom: 1.75rem;
+  right: 0.5rem;
+  margin: 0;
+  font-size: 16px;
+  text-align: right;
+}
+
+.stockPrice {
+  display: block;
+  position: absolute;
+  margin: 0;
+  bottom: 0.75rem;
+  right: 0.5rem;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.stockLink button {
+  position: absolute;
+  display: block;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+}
+
+.stockCard {
+  position: relative;
+  width: 49%;
+  height: 220px;
+}
+
+.stockCard:nth-child(1) {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  background: var(--color-pink-medium-three);
+}
+
+.stockCard:nth-child(1) .stockSymbol {
+  font-size: 6.5rem;
+}
+
+.stockCard:nth-child(1) .stockName {
+  font-size: 1.25rem;
+  bottom: 6rem;
+  max-width: 200px;
+}
+
+.stockCard:nth-child(1) .stockPrice {
+  font-size: 1.35rem;
+  bottom: 4rem;
+  font-weight: 400;
+}
+
+.stockCard:nth-child(1) .stockLink button {
+  top: auto;
+  bottom: 0.75rem;
+  right: 0.5rem;
+}

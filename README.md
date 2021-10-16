@@ -13,6 +13,8 @@ For this repository, I've been working on the React Capstone Project to create a
 </div>
 </center>
 
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+
 ## Built With 🔨
 
 - JavaScript
@@ -142,6 +144,7 @@ Give a ⭐️ if you like this project!
 - Microverse program ⚡
 - Our standup team 🏹
 - Our family's support 🙌
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 

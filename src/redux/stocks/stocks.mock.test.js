@@ -1,4 +1,3 @@
-/* eslint no-return-await: "error" */
 import axios from 'axios';
 
 const API_KEY = '819c2b8705e5c67cf963a89ad94aa274';
@@ -6,8 +5,8 @@ export const STOCKS_API_URL = `https://financialmodelingprep.com/api/v3/availabl
 
 export const fetchData = async () => {
   const url = STOCKS_API_URL;
-
-  return await axios.get(url);
+  const getURL = await axios.get(url);
+  return getURL;
 };
 
 fetchData('react');

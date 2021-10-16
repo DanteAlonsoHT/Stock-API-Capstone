@@ -4,10 +4,10 @@ import {
   Switch,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../../redux/configureStore';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
-import StocksList from './StocksList'
+import store from '../../redux/configureStore';
+import StocksList from './StocksList';
 
 const renderComponent = () => {
   render(
@@ -15,16 +15,16 @@ const renderComponent = () => {
       <Router>
         <Switch>
           <StocksList />
-        </Switch >
+        </Switch>
       </Router>
-    </Provider>
+    </Provider>,
   );
 };
 
 describe('Testing StocksList component', () => {
   test('render the StocksList successfully (without Hi text)', () => {
     renderComponent();
-    expect(screen.queryAllByText("Hi")).toStrictEqual([]);
+    expect(screen.queryAllByText('Hi')).toStrictEqual([]);
   });
 
   test('StocksList has 2 buttons', () => {

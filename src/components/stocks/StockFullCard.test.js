@@ -5,19 +5,19 @@ import {
 } from 'react-router-dom';
 import { create } from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import store from '../../redux/configureStore';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
-import StockFullCard from './StockFullCard'
+import store from '../../redux/configureStore';
+import StockFullCard from './StockFullCard';
 import StockCardStyle from './StockCard.module.css';
 import StockFullCardStyle from './StockFullCard.module.css';
 
-const stockId = "1";
-const symbolStock = "SPY";
-const nameStock = "SPDR S&P 500 ETF Trust";
-const priceStock = "444.8";
-const exchangeStock = "New York Stock Exchange Arca";
-const exchangeShortNameStock = "AMEX";
+const stockId = '1';
+const symbolStock = 'SPY';
+const nameStock = 'SPDR S&P 500 ETF Trust';
+const priceStock = '444.8';
+const exchangeStock = 'New York Stock Exchange Arca';
+const exchangeShortNameStock = 'AMEX';
 
 const createComponent = create(
   <div key="full-description" id={stockId} className={StockFullCardStyle.fullDescriptionContent}>
@@ -39,7 +39,7 @@ const createComponent = create(
         {' '}
       </li>
     </ul>
-  </div>
+  </div>,
 );
 
 const renderComponent = () => {
@@ -48,16 +48,16 @@ const renderComponent = () => {
       <Router>
         <Switch>
           <StockFullCard />
-        </Switch >
+        </Switch>
       </Router>
-    </Provider>
+    </Provider>,
   );
 };
 
 describe('Testing StockFullCard component', () => {
   test('render the StockFullCard successfully', () => {
     renderComponent();
-    expect(screen.queryAllByText("*")).toStrictEqual([]);
+    expect(screen.queryAllByText('*')).toStrictEqual([]);
   });
 
   test('it has a div as the type of component', () => {
@@ -67,14 +67,13 @@ describe('Testing StockFullCard component', () => {
 
   test('it has props as an object', () => {
     const component = createComponent.toJSON();
-    expect(typeof JSON.parse(JSON.stringify(component.props))).toStrictEqual("object");
+    expect(typeof JSON.parse(JSON.stringify(component.props))).toStrictEqual('object');
   });
 
   test('it has two props', () => {
     const component = createComponent.toJSON();
     expect(Object.keys(JSON.parse(JSON.stringify(component.props))).length).toStrictEqual(2);
   });
-
 
   test('it has id as a prop', () => {
     const component = createComponent.toJSON();
@@ -108,7 +107,9 @@ describe('Testing StockFullCard component', () => {
 
   test('its first child has only one property', () => {
     const component = createComponent.toJSON();
-    expect(Object.keys(JSON.parse(JSON.stringify(component.children[0].props))).length).toStrictEqual(1);
+    expect(
+      Object.keys(JSON.parse(JSON.stringify(component.children[0].props))).length,
+    ).toStrictEqual(1);
   });
 
   test('its first child has only className as property', () => {
@@ -118,7 +119,9 @@ describe('Testing StockFullCard component', () => {
 
   test('its second child has only one property', () => {
     const component = createComponent.toJSON();
-    expect(Object.keys(JSON.parse(JSON.stringify(component.children[1].props))).length).toStrictEqual(1);
+    expect(
+      Object.keys(JSON.parse(JSON.stringify(component.children[1].props))).length,
+    ).toStrictEqual(1);
   });
 
   test('its second child has only className as property', () => {

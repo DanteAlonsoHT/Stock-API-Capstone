@@ -6,17 +6,17 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
 import { v4 as uuidv4 } from 'uuid';
-import StockCard from './StockCard'
+import StockCard from './StockCard';
 
 const goodProps = () => {
-  const stockId = "1";
-  const symbolStock = "SPY";
-  const nameStock = "SPDR S&P 500 ETF Trust";
-  const priceStock = "444.8";
-  const stockCardStock = "bg-light";
+  const stockId = '1';
+  const symbolStock = 'SPY';
+  const nameStock = 'SPDR S&P 500 ETF Trust';
+  const priceStock = '444.8';
+  const stockCardStock = 'bg-light';
   const index = 0;
-  return ([stockId, symbolStock, nameStock, priceStock, stockCardStock, index])
-}
+  return ([stockId, symbolStock, nameStock, priceStock, stockCardStock, index]);
+};
 
 const renderComponent = (props) => {
   const [id, symbol, name, price, bgValue, index] = props;
@@ -32,8 +32,8 @@ const renderComponent = (props) => {
           stockCard={bgValue}
           title={index === 0 ? 'ALL STOCKS' : ''}
         />
-      </Switch >
-    </Router>
+      </Switch>
+    </Router>,
   );
 };
 
@@ -64,7 +64,7 @@ describe('Testing StockCard component', () => {
 
   test('when index value is 0 a title appears', () => {
     renderComponent(goodProps());
-    expect(screen.queryByText("ALL STOCKS")).toBeInTheDocument();
+    expect(screen.queryByText('ALL STOCKS')).toBeInTheDocument();
   });
 
   test('button is present in the screen', () => {

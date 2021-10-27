@@ -7,7 +7,7 @@ import 'boxicons';
 const NavBar = () => (
   <nav className={NavBarStyle.navContent}>
     <NavLink key={uuidv4()} to="/home">
-      <box-icon name="left-arrow" type="solid" color="#f8f8f8" />
+      <box-icon name="left-arrow" type="solid" color="#f7f7f7" />
     </NavLink>
     <div>
       <NavLink key={uuidv4()} to="/home" className={NavBarStyle.navLink}>Home</NavLink>

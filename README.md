@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple example steps.
 
 - If you want to run our tests, use the next command.
 
-` $ npm test `
+` $ npm test`
 
 ### Prerequisites
 

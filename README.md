@@ -135,7 +135,7 @@ Feel free to check the [issues page](https://github.com/DanteAlonsoHT/Stock-API-
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project
 
 ## Acknowledgments
 

@@ -2,7 +2,7 @@
 
 # React Capstone Project: Stock API 🤑
 
-For this repository, I've been working on the React Capstone Project to create a React app using Redux, the main objective is to use the [Stock API](https://financialmodelingprep.com/developer/docs) to consume it, using actions and reducers in React, to understand the concepts about state management, connect React and Redux, connect an existing API via Redux and use the data to display something in the UI, apply React best practices and language style guides in code, and finally add tests using JEST and React Testing Library in the app...
+For this repository, I've been working on the React Capstone Project to create a React app using Redux, the main objective is to use the [Stock API](https://financialmodelingprep.com/developer/docs) to consume it, using actions and reducers in React, to understand the concepts about state management, connect React and Redux, connect an existing API via Redux and use the data to display something in the UI, apply React best practices and language style guides in code, and finally add tests using JEST and React Testing Library in the app.
 
 ## [Live Demo Version Link 👀](https://stock-api-capstone-project.netlify.app)
 
